@@ -1,3 +1,6 @@
+def add_numbers(a, b):
+    return a + b
+
 def is_even(number):
     """
     주어진 숫자가 짝수인지 확인하는 함수.
@@ -13,7 +16,15 @@ def is_even(number):
 number_to_check = 10
 result = is_even(number_to_check)
 
+num1 = 5
+num2 = 10
+result = add_numbers(num1, num2)
+
 if result:
     print(f"{number_to_check}는 짝수입니다.")
+    print(f"{num1}과 {num2}의 합은 {result}입니다.")
+
 else:
     print(f"{number_to_check}는 홀수입니다.")
+    print(f"{num1}과 {num2}의 합은 {result}입니다.")
+
